@@ -14,8 +14,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "jolbastau",
-  description: "LMS + CRM for jolbastau",
+  title: {
+    default: "Jolbastau",
+    template: "%s — Jolbastau",
+  },
+  description: "LMS + CRM for Jolbastau",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
